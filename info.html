@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <title>Honesty</title>
+   <style>
+     /* write your CSS rules here or in the external file  css/mystyle.css */
+	 
+   </style>
+   <link rel='stylesheet' href='normalize.css' type='text/css' media='screen'>
+</head>
+<body>
+
+<div class="header">
+  <h1>Lovish A.</h1>
+  
+</div>
+
+<div class="topnav">
+  <a href="honesty.html">Honesty</a>
+  <a href="info.html">Info</a>
+  <a href="reflection.html">Reflection</a>
+</div>
+
+<div style="padding-left:20px">
+  <h1>Sign Up</h1>
+  
+  <div id="formholder">
+                <h3>Please fill in your information:</h3>
+                <form
+                    id="signupForm"
+                    name="signup"
+                    action="https://httpbin.org/post"
+                    method="POST"
+                >
+				
+				<label for="s-fname">First Name:</label>
+                    <input id="s-fname" name="fname" type="text" required pattern="[A-Z][a-zA-Z]*" />
+
+                    <label for="s-lname">Last Name:</label>
+                    <input id="s-lname" name="lname" type="text" required pattern="[A-Z][a-zA-Z]*" />
+                    
+					
+                    <label for="s-password">Password:</label>
+                    <input id="s-password" name="password" type="password" required />
+
+                    <label for="s-cpassword">Confirm Password:</label>
+                    <input id="s-cpassword" name="cpassword" type="password" required />
+
+					<label for="s-username">Username: </label>
+                    <input id="s-username" name="username" type="text" required />
+
+                    <label>Education Status: </label>
+                    <div class="edustatus">
+                        <input
+                            name="edus"
+                            type="radio"
+                            value="Graduated"
+                            required
+                        />Graduated
+												
+                        <input
+                            name="edus"
+                            type="radio"
+                            value="Currently enrolled"
+                        />Currently enrolled
+                        
+						<input
+                            name="edus"
+                            type="radio"
+                            value="Did not graduate"
+                        />Did not graduate
+                    </div>
+
+                    <label for="s-email">Email:</label>
+                    <input
+                        id="s-email"
+                        name="email"
+                        type="email"
+                        required
+                    />
+
+					<label for="age">Age:</label>
+					<input type="number" value="18" id="age" name="age"
+						min="18" max="60">
+
+                    <input
+                        type="hidden"
+                        name="lastName"
+                        id="lastName"
+                        value="Arora"
+                    />
+                    <input
+                        type="hidden"
+                        name="studentId"
+                        id="studentId"
+                        value="145053203"
+                    />
+
+                    <div id="buttons">
+                        <input type="submit" name="submit" value="Submit" />
+                        <input type="reset" name="reset" value="Reset" />
+                    </div>
+                </form>
+            </div>
+
+            <aside>
+                <h4 class="hidden" id="errorHeader"></h4>
+                <div class="hidden" id="error"></div>
+            </aside>
+  
+</div>
+
+<div class="footer">
+  <h2>©Lovish Arora- <a href=""> Github</a></h2>
+</div>
+
+</body>
+</html>
